@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif 4', serif;
+}
+body
+{
+	overflow-x: hidden;
+	min-height: 100vh;
+	background-image: url('./taar-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+#header
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+    padding-top: 3.5vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 3.5vh;
+	display: flex;
+	justify-content:space-between;
+	align-items:center; 
+	background: #eed1ffa6;
+}
+#header .logo
+{
+	color:#a355e0;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+	border-radius: 20px;
+    padding-left: 5vw;
+}
+#header ul
+{
+	display: flex;
+	justify-content: centre;
+	align-items: center;
+}
+#header ul li
+{
+	list-style:none;
+	margin-left: 3vw;
+}
+#header ul li a
+{
+	text-decoration: none;
+	padding-top: 1.5vh;
+    padding-right:2vw;
+    padding-left: 2vw;
+    padding-bottom: 1.5vh;
+	color: #a355e0;
+	border-radius: 20px;
+    margin-top: 2vh;
+}
+
+#header ul li a:hover,#header ul li a.active
+
+{
+	background:#a355e0 ;
+	color: #fff ;
+	border-radius: 20px;
+
+}
+.title
+{
+	padding-top: 45vh;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.title h2
+{
+	border-radius: 15px;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	color:white;
+}
+.title span
+{
+    letter-spacing: 0.5vw;
+}
+.title h4
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	color:white;
+}
+.title a, .card_details a
+{
+	padding: 6px 15px;
+	background:#a355e0 ;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+}
+.blankspace h1
+{
+    opacity:0;
+}
+
+.gallery
+{
+    background-color: #5d159d;
+	display:flex;
+	justify-content:space-between;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.card
+{
+	overflow: hidden;
+	justify-content: space-between;
+	position: relative;
+	cursor: pointer;
+	margin: 5px;
+}
+.card_details
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	background-color:rgba(255,255,255,0.5) ;
+	backdrop-filter: blur(1.2px) brightness(1);
+	padding:0.5rem;
+	opacity :0;
+	transition: opacity 350ms;
+}
+.card_details h2, .h2
+{
+	top: 20px;
+	transition: top 350ms;
+	line-height: 1.5rem;
+	color:black;
+}
+.card_details span
+{
+	transition: top 350ms;
+	line-height: 5px;
+	color:black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover img
+{
+	transform: scale(1.1);
+}
+.card:hover .card_details
+{
+    opacity: 1;
+}
+.card:hover .card_details h2
+{
+	top:0;
+}
+
+
+
+.popup h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
+} 
+.popup a{
+    position: relative;
+    padding: 8px 40px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #111;
+
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: white;
+    visibility: hidden;
+    opacity:0 ; 
+    transition: 0.5s;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+    transition: 0.5s;
+}
+.form{
+    box-sizing: border-box;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-radius:8px;
+	background: transparent;
+    margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 2px solid #2e2d2d2e;
+	backdrop-filter: blur(20px);
+    width: 500px;
+    clear: both;
+}
+.btn-info{
+    background-color: black;
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+}  
+.form label{
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 4px;
+}
+.form input {
+    width: 50%;
+    clear: both;
+    align-items: flex-start;
+
+}

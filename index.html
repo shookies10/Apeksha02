@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+	<title>Taarangana'24</title>
+	<link rel="stylesheet" type="text/css" href="apeksha.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+	<header id="header">
+		<a href = "#" class = "logo">Taarangana'24</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#" class="active">Events</a></li>
+			<li><a href="#">Schedule</a></li>
+			<li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+		</ul>
+	</header>
+    <div class ="container">
+        <div class="title">
+            <h2><br><span>EVENT SCHEDULE</span></h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia vitae veritatis similiqulorem   e voluptatum ipsa quae ex. Itaque cupiditate ratione consectetur laborum fugit architecto natus repellat consequatur, neque, assumenda porro.</h4><br>
+            <a href="#">Explore Now!</a>
+        </div>
+	</div>
+
+    <div class="blankspace">
+        <h1>Lorem ipsum dsaepe debitis ullam dignissimos deserunt numquam suscipitlore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt maxime amet repudiandae temporibus inventore doloremque minima officiis ipsam eveniet tempora consequuntur esse ad repellat sunt, magnam voluptate harum expedita. ipsam laborum corporis.t ri obcaecati!Lorem</h1>
+    </div>
+	<div class="container" id="blur">
+		<div class="content">
+			
+		</div>
+	</div>
+
+	<div class="popup" id="popup">
+		<h2>Register now</h2>
+		<p>Kindly enter your details</p>
+		<div class="reg-form">
+		<form class="form">
+			<label>Enter your name:</label>
+			<input type="text;" placeholder="Enter your name"><br>
+			<label>Email ID:</label>
+			<input type="email" placeholder="Email ID"><br>
+			<label>Contact No:</label>
+			<input type="number" placeholder="Phone nunber"><br>
+			<label>College Name:</label>
+			<input type="text" placeholder="College name"><br>
+			<button type="submit" class="btn-info">Submit form</button>
+		</form>
+	</div>
+		<a href="#" onclick="toggle()">close</a>
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var blur = document.getElementById('blur');
+			blur.classList.toggle('active');
+			var popup = document.getElementById('popup');
+			popup.classList.toggle('active');
+		}
+	</script>
+
+
+    <div class="gallery">
+
+		<div class = "card">
+			<img src="prom.jpg" alt="prom-event">
+			<div class="card_details">
+				<h2>Prom Night</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+
+		<div class = "card">
+			<img src="fashion.jpg" alt="fashion-event">
+			<div class="card_details">
+				<h2>Fashion Show</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+
+		<div class = "card">
+			<img src="comedy.jpg" alt="stand-up-comedy-event">
+			<div class="card_details">
+				<h2>Stand up comedy</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+
+		<div class = "card">
+			<img src="dance.jpg" alt="group-dance-event">
+			<div class="card_details">
+				<h2>Dance competition</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+    </div>
+
+    <div class="gallery">
+
+		<div class = "card">
+			<img src="hiphop.jpg" alt="hip-hop-event">
+			<div class="card_details">
+				<h2>Hip-hop competition</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+
+		<div class = "card">
+			<img src="rap.jpg" alt="rap-battle-event">
+			<div class="card_details">
+				<h2>Rap-battle</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+
+		<div class = "card">
+			<img src="paint.jpg" alt="live-paitning-event">
+			<div class="card_details">
+				<h2>Live painting</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+
+		<div class = "card">
+			<img src="sing.jpg" alt="sing-event">
+			<div class="card_details">
+				<h2>Sing-off</h2>
+                <br>
+                <a href="#" onclick="toggle()">Register now</a>
+			</div>
+		</div>
+    </div>
+
+</body>
+</html>
